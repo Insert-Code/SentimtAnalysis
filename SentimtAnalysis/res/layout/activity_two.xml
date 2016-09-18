@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/editText1"
+            android:layout_alignTop="@+id/imageView1"
+            android:src="@android:drawable/presence_offline" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/editText1"
+            android:layout_toRightOf="@+id/editText1"
+            android:background="#FFFFFF"
+            android:text="搜索" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/editText1"
+            android:layout_marginLeft="23dp"
+            android:src="@drawable/search" />
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="14dp"
+            android:ems="10" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editText1"
+            android:layout_below="@+id/button1" >
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:fontFamily="幼圆"
+                android:text="全部"
+                android:textSize="10px" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="38dp"
+                android:background="#FFFFFF"
+                android:fontFamily="幼圆"
+                android:text="中评"
+                android:textSize="10px" />
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="38dp"
+                android:background="#FFFFFF"
+                android:fontFamily="幼圆"
+                android:text="好评"
+                android:textSize="10px" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="38dp"
+                android:background="#FFFFFF"
+                android:fontFamily="幼圆"
+                android:text="差评"
+                android:textSize="10px" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 标题 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:text="博文内容" />
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="总分数" />
+    </LinearLayout>
+    <!-- ListView控件 -->
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+</LinearLayout>
